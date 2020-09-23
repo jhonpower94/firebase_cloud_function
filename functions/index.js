@@ -23,12 +23,7 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-const plans = [];
 
-app.get("/plans", (req, res) => {
-  plans.push(req.query);
-  res.send(plans);
-});
 
 app.get("/", (req, res) => {
   const {
